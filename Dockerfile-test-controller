@@ -1,0 +1,4 @@
+ARG unifi_image
+FROM $unifi_image
+
+COPY ./testdata/unifi /unifi

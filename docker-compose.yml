@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  controller:
+    build:
+      context: .
+      dockerfile: Dockerfile-test-controller
+      args:
+        unifi_image: jacobalberty/unifi:stable-6
+    environment:
+      TZ: America/New_York
+    ports:
+      - 8080:8080
+      - 8443:8443
+      - 3478:3478/udp
+      - 10001:10001/udp
