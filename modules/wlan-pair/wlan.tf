@@ -28,6 +28,7 @@ resource "unifi_wlan" "wlan" {
   # controller v6
   network_id   = var.controller_v5 ? null : unifi_network.vlan.id
   ap_group_ids = var.controller_v5 ? null : [data.unifi_ap_group.default[0].id]
+  wlan_band    = var.controller_v5 ? null : "both"
 
   user_group_id = data.unifi_user_group.default.id
 }
