@@ -20,6 +20,7 @@ resource "unifi_wlan" "wlan" {
 
   is_guest          = var.is_guest
   multicast_enhance = var.multicast_enhance
+  no2ghz_oui        = var.no2ghz_oui
 
   # controller v5
   vlan_id       = var.controller_v5 ? var.vlan_id : null

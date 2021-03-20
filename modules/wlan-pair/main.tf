@@ -64,3 +64,8 @@ variable "controller_v5" {
   type    = bool
   default = false
 }
+
+variable "no2ghz_oui" {
+  type    = bool
+  default = false
+}
