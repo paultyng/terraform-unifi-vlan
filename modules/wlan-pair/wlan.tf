@@ -16,7 +16,7 @@ resource "unifi_wlan" "wlan" {
   no2ghz_oui        = var.no2ghz_oui
 
   network_id   = unifi_network.vlan.id
-  ap_group_ids = [data.unifi_ap_group.default[0].id]
+  ap_group_ids = [data.unifi_ap_group.default.id]
   wlan_band    = "both"
 
   user_group_id = data.unifi_user_group.default.id
