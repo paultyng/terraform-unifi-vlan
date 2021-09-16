@@ -20,4 +20,7 @@ resource "unifi_wlan" "wlan" {
   wlan_band    = "both"
 
   user_group_id = data.unifi_user_group.default.id
+
+  minimum_data_rate_2g_kbps = var.minimum_data_rate_2g_kbps
+  minimum_data_rate_5g_kbps = var.minimum_data_rate_5g_kbps
 }

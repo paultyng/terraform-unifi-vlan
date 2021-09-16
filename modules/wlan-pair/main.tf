@@ -64,3 +64,13 @@ variable "no2ghz_oui" {
   type    = bool
   default = false
 }
+
+variable "minimum_data_rate_2g_kbps" {
+  type    = number
+  default = 6000
+}
+
+variable "minimum_data_rate_5g_kbps" {
+  type    = number
+  default = null
+}
