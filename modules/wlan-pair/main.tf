@@ -26,6 +26,16 @@ variable "passphrase" {
   default     = ""
 }
 
+variable "wpa3_support" {
+  type    = bool
+  default = true
+}
+
+variable "wpa3_transition" {
+  type    = bool
+  default = true
+}
+
 variable "domain_name" {
   description = "Network domain name, defaults to the lowercase version of <name>.local."
   type        = string

@@ -7,9 +7,11 @@ data "unifi_user_group" "default" {
 resource "unifi_wlan" "wlan" {
   count = var.ssid == "" ? 0 : 1
 
-  name       = var.ssid
-  security   = "wpapsk"
-  passphrase = var.passphrase
+  name            = var.ssid
+  security        = "wpapsk"
+  passphrase      = var.passphrase
+  wpa3_support    = var.wpa3_support
+  wpa3_transition = var.wpa3_transition
 
   is_guest          = var.is_guest
   multicast_enhance = var.multicast_enhance
