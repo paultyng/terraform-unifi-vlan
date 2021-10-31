@@ -12,6 +12,7 @@ resource "unifi_wlan" "wlan" {
   passphrase      = var.passphrase
   wpa3_support    = var.wpa3_support
   wpa3_transition = var.wpa3_transition
+  pmf_mode        = var.pmf_mode
 
   is_guest          = var.is_guest
   multicast_enhance = var.multicast_enhance

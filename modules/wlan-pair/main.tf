@@ -36,6 +36,11 @@ variable "wpa3_transition" {
   default = true
 }
 
+variable "pmf_mode" {
+  type    = string
+  default = "optional"
+}
+
 variable "domain_name" {
   description = "Network domain name, defaults to the lowercase version of <name>.local."
   type        = string
