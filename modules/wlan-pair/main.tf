@@ -87,5 +87,5 @@ variable "minimum_data_rate_2g_kbps" {
 
 variable "minimum_data_rate_5g_kbps" {
   type    = number
-  default = null
+  default = 6000
 }
